@@ -1,6 +1,7 @@
 /*Ejercicio 7: Escribe el programa para un juego que consista en averiguar un número. El programa
 nos indicará cada vez si el número introducido es mayor o menor que la constante almacenada que
 tendremos que averiguar. Cuando se descubre el numero mostrara un mensaje de felicitación.*/
+
 package ejercicio7;
 
 import java.util.Scanner;
