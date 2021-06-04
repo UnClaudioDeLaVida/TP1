@@ -15,29 +15,6 @@ public class Punto2 {
         } else {
             System.out.println("El año " + anioAIngresar + " no es bisiesto");
         }
-
-//        System.out.println("Ingrese el año en cuestión para saber si es bisiesto:");
-//        anioIngresado = ingresoTeclado.nextInt();
-//        
-//        do {
-//            System.out.println("Ingrese el año en cuestión para saber si es bisiesto:");
-//            anioIngresado = ingresoTeclado.nextInt();
-//            if (anioIngresado > 0) {
-//                if (anioIngresado % 400 == 0) {
-//                    System.out.println(anioIngresado + " es año bisiesto!");
-//                } else if (anioIngresado % 4 == 0) {
-//                    if (anioIngresado % 100 == 0) {
-//                        System.out.println(anioIngresado + " no es año bisiesto!");
-//                    } else {
-//                        System.out.println(anioIngresado + " es año bisiesto!");
-//                    }
-//                } else {
-//                    System.out.println(anioIngresado + " no es año bisiesto!");
-//                }
-//            } else {
-//                System.out.println("El año debe ser un número positivo!!");
-//            }
-//        } while (anioIngresado < 0);
     }//CIERRA MAIN()
 
     public static int ingresarVerificar() {
