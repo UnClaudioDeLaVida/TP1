@@ -1,6 +1,7 @@
 /*Ejercicio 1: Escribe un programa que tome 3 números enteros introducidos por el usuario
 mediante el teclado y determine cuántos de dichos números son diferentes, el promedio, la suma
 de todos, el producto del mayor por el menor y si el número restante es divisible por 3.*/
+
 package ejercicio1;
 
 import java.util.Scanner;
