@@ -12,21 +12,21 @@ import java.util.Scanner;
 public class Punto11 {
 
     public static void main(String[] args) {
-        int numeroIngresado;
+        long numeroIngresado;
         do{
         numeroIngresado = ingresaNumero();
         } while (buscaErrores(numeroIngresado) == true);
         System.out.println(numeroIngresado + " a decimal: " + pasarADecimal(numeroIngresado));
     }
 
-    public static int ingresaNumero() {
+    public static long ingresaNumero() {
         Scanner ingresoTeclado = new Scanner(System.in);
         System.out.println("Ingrese el número a pasar de binario a decimal");
-        int numeroIngresado = ingresoTeclado.nextInt();
+        long numeroIngresado = ingresoTeclado.nextLong();
         return numeroIngresado;
     }
     
-    public static boolean buscaErrores (int numeroElegido) {
+    public static boolean buscaErrores (long numeroElegido) {
         boolean hayErrores = false;
         do {
             if ((numeroElegido % 10 != 0)&&(numeroElegido % 10 != 1)){
@@ -35,15 +35,15 @@ public class Punto11 {
             numeroElegido /=10;
         } while((numeroElegido!=0)&&(numeroElegido!=1));
         if (hayErrores)
-            System.out.println("El número solo contener 0 y 1!");
+            System.out.println("El número solo debe contener 0 y 1!");
         return hayErrores;
     }
     
-    public static int pasarADecimal (int numeroEnBinario){
+    public static int pasarADecimal (long numeroEnBinario){
         int sumaParcial = 0;
         int multiplicadorBinario = 1;
         while(numeroEnBinario>0){
-            sumaParcial+=((numeroEnBinario%10)*multiplicadorBinario);
+            sumaParcial+=(int)((numeroEnBinario%10)*multiplicadorBinario);
             numeroEnBinario/=10;
             multiplicadorBinario*=2;
         }
